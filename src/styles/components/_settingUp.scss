@@ -75,6 +75,19 @@ body{
 
 }
 
+.team_El{
+    color: $c-bg;
+}
+
+.team_El:hover{
+    color: $c-bg;
+}
+
+.team_El:visited{
+    color: $c-bg;
+}
+
+
 small{
     color: $c-bg;
 }

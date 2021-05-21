@@ -90,6 +90,18 @@ body {
   text-align: right;
 }
 
+.team_El {
+  color: #efefef;
+}
+
+.team_El:hover {
+  color: #efefef;
+}
+
+.team_El:visited {
+  color: #efefef;
+}
+
 small {
   color: #efefef;
 }
