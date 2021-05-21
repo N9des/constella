@@ -8603,6 +8603,7 @@ gsap_Draggable__WEBPACK_IMPORTED_MODULE_1__["Draggable"].create(".svg", {
 var constWindow = document.querySelector(".star");
 var closeButton = document.querySelector("#trigger");
 var mainTitle = document.querySelector(".title--medium");
+var zodiaqueFilter = document.querySelector('#zodiaque-filter');
 var data; // <-- On va stocker les infos du json ici
 
 /* STEP 1: Créer une fonction qu'on va appeler APRES avoir charger le JSON */
@@ -8641,16 +8642,6 @@ var activeArea = function activeArea(id) {
     return constellation.num == id;
   });
   var rawData = Object.values(chosenConst);
-
-  for (var i = 0; i < constList.length; i++) {
-    var selectedConst = constList[i];
-
-    if (selectedConst.zodiaque == false) {
-      var hiddenConst = document.querySelector("[data-name='" + selectedConst.num + "']");
-      hiddenConst.style.display = "none";
-    }
-  }
-
   var constName = rawData[0];
   var constLatinName = rawData[1];
   var constAscension = rawData[2];
@@ -8667,8 +8658,24 @@ var activeArea = function activeArea(id) {
   var constIsZodiac = rawData[13];
   mainTitle.innerHTML = constName;
 };
-/* STEP 3: Charger le fichier JSON */
 
+zodiaqueFilter.addEventListener('click', function () {
+  var constList = data.constellations;
+
+  for (var i = 0; i < constList.length; i++) {
+    var selectedConst = constList[i];
+    var selectedConstElement = document.querySelector("[data-name='" + selectedConst.num + "']");
+
+    if (!selectedConstElement) {
+      continue;
+    }
+
+    if (selectedConst.zodiaque === false) {
+      selectedConstElement.classList.toggle("not-selected");
+    }
+  }
+});
+/* STEP 3: Charger le fichier JSON */
 
 var myRequest = new Request("./assets/list.json");
 fetch(myRequest).then(function (resp) {
