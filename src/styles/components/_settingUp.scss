@@ -1,0 +1,75 @@
+@import 'components/type';
+@import 'utils/variables';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+    height: 100vh;
+    font-size: 16px;
+
+    background-image: url(/assets/images/bg_acc.png);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* header */
+
+.logo_DP_min{
+    width: 20%;
+}
+
+
+/* main */
+
+.main {
+    text-align: center;
+}
+
+
+/* footer */
+
+.footer{
+    width: 100%;
+}
+
+.footer_list{
+    
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.DWM_list{
+    list-style: none;
+}
+
+.logoDWM{
+    width: 100%;
+}
+
+
+.team_list{
+    list-style: none;
+    text-align: right;
+
+}
+
+small{
+    color: $c-bg;
+}
+
+
