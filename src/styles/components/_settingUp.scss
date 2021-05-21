@@ -29,6 +29,10 @@ body{
     width: 20%;
 }
 
+.logo_link{
+    display: none;
+}
+
 
 /* main */
 
@@ -75,16 +79,16 @@ body{
 
 }
 
-.team_El{
+.team_link{
     color: $c-bg;
 }
 
-.team_El:hover{
-    color: $c-bg;
+.team_link:hover{
+    color: $c-hover;
 }
 
-.team_El:visited{
-    color: $c-bg;
+.team_link:visited{
+    color: $c-visited;
 }
 
 
