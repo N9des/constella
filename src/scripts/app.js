@@ -11,6 +11,7 @@ Draggable.create(".svg", {type:"x,y", bounds:".container", inertia:true});
 let constWindow = document.querySelector(".star");
 let closeButton = document.querySelector("#trigger");
 let mainTitle = document.querySelector(".title--medium");
+let zodiaqueFilter = document.querySelector('#zodiaque-filter');
 
 let data; // <-- On va stocker les infos du json ici
 /* STEP 1: Créer une fonction qu'on va appeler APRES avoir charger le JSON */
@@ -21,8 +22,6 @@ function initHoverInteractions () {
             var id = this.dataset.name;
             constWindow.classList.add('star--active');
             activeArea(id);
-
-
         })
     })
     closeButton.addEventListener('click', function(){
@@ -47,16 +46,7 @@ var activeArea = function (id) {
     let rawData = Object.values(chosenConst);
 
     
-    for (let i = 0; i < constList.length; i++)
-    {
-        let selectedConst = constList[i];
-        if (selectedConst.zodiaque == false)
-        {
-
-            let hiddenConst = document.querySelector("[data-name='"+selectedConst.num+"']")
-            hiddenConst.style.display = "none";
-        }
-    }
+    
 
 
 
@@ -78,6 +68,24 @@ var activeArea = function (id) {
     mainTitle.innerHTML= constName;
     
 }
+
+zodiaqueFilter.addEventListener('click', function(){
+    let constList = data.constellations 
+
+        for (let i = 0; i < constList.length; i++)
+        {
+            let selectedConst = constList[i];
+            let selectedConstElement = document.querySelector("[data-name='"+selectedConst.num+"']")
+            if(!selectedConstElement){
+                continue;
+            }
+
+            if (selectedConst.zodiaque === false) 
+            {
+                selectedConstElement.classList.toggle("not-selected");
+            }
+        }
+})
 
 
 

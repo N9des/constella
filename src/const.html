@@ -13,8 +13,15 @@
   <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
-  <g class="map container">
-    <g id="dragMe" class="map__image" >
+  <div class="map container">
+    <div class="const-filters">
+      <input value="zodiaque" type="checkbox" id="zodiaque-filter"name="value" />
+    <label for="zodiaque">Signes du Zodiaque</label>
+    </div>
+
+
+    <!-- MAP -->
+      <div id="dragMe" class="map__image" >
       <svg class="svg" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 3425.2 1578.2" style="enable-background:new 0 0 3425.2 1578.2;" xml:space="preserve">
         <g data-name="CEPH" >
@@ -1624,8 +1631,8 @@
             2608.3,563.4 2568.1,563.4 2568.1,590.5 2351.9,590.5 2351.9,524.7 		"/>
         </g>
         </svg>
-    </g>
-</g>
+      </div>
+    </div>
 
 
 <g class="star">
