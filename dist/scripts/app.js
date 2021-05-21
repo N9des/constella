@@ -8636,10 +8636,21 @@ var activeArea = function activeArea(id) {
       }); */
 
 
+  var constList = data.constellations;
   var chosenConst = data.constellations.find(function (constellation) {
     return constellation.num == id;
   });
   var rawData = Object.values(chosenConst);
+
+  for (var i = 0; i < constList.length; i++) {
+    var selectedConst = constList[i];
+
+    if (selectedConst.zodiaque == false) {
+      var hiddenConst = document.querySelector("[data-name='" + selectedConst.num + "']");
+      hiddenConst.style.display = "none";
+    }
+  }
+
   var constName = rawData[0];
   var constLatinName = rawData[1];
   var constAscension = rawData[2];
@@ -8654,7 +8665,6 @@ var activeArea = function activeArea(id) {
   var constIsBoreal = rawData[11];
   var constIsAustrale = rawData[12];
   var constIsZodiac = rawData[13];
-  console.log(rawData);
   mainTitle.innerHTML = constName;
 };
 /* STEP 3: Charger le fichier JSON */
@@ -8690,8 +8700,8 @@ fetch(myRequest).then(function (resp) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\admin\Desktop\constella-workflow\src\scripts\app.js */"./src/scripts/app.js");
-module.exports = __webpack_require__(/*! C:\Users\admin\Desktop\constella-workflow\src\styles\app.scss */"./src/styles/app.scss");
+__webpack_require__(/*! C:\Users\dimit\Documents\Cours\DATAPLAY\constella\src\scripts\app.js */"./src/scripts/app.js");
+module.exports = __webpack_require__(/*! C:\Users\dimit\Documents\Cours\DATAPLAY\constella\src\styles\app.scss */"./src/styles/app.scss");
 
 
 /***/ })

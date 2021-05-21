@@ -42,9 +42,23 @@ var activeArea = function (id) {
         return elm.num.indexOf(id)>=0
     }); */
 
+    let constList = data.constellations 
     let chosenConst = data.constellations.find(constellation => constellation.num == id);
     let rawData = Object.values(chosenConst);
+
     
+    for (let i = 0; i < constList.length; i++)
+    {
+        let selectedConst = constList[i];
+        if (selectedConst.zodiaque == false)
+        {
+
+            let hiddenConst = document.querySelector("[data-name='"+selectedConst.num+"']")
+            hiddenConst.style.display = "none";
+        }
+    }
+
+
 
     let constName =         rawData[0];
     let constLatinName =    rawData[1];
@@ -61,10 +75,12 @@ var activeArea = function (id) {
     let constIsAustrale=    rawData[12];
     let constIsZodiac=      rawData[13];
 
-console.log(rawData);
     mainTitle.innerHTML= constName;
     
 }
+
+
+
 /* STEP 3: Charger le fichier JSON */
 let myRequest = new Request("./assets/list.json",);
 fetch(myRequest)
