@@ -1,6 +1,5 @@
-@import 'components/type';
-@import 'utils/variables';
-
+@use 'components/type';
+@use 'utils/variables';
 
 *{
     padding: 0;
@@ -36,8 +35,12 @@ body{
 
 /* main */
 
-.main {
+.mob-tab {
     text-align: center;
+
+    .title--big, h2{
+        color: $c-hover;
+    }
 
     h2, .bold{
         font-weight: bold;
@@ -97,3 +100,55 @@ small{
 }
 
 
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 700px) {
+    
+    body{
+        padding: 25px;
+    }
+
+    /* HEAD */
+
+    .logo_DP_min{
+        width: 10%;
+    }
+
+    /* MAIN */
+
+    .main{
+
+        p{
+            width: 100%;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1250px) {
+    
+    body{
+        display: block;
+        padding: 50px 100px;
+    }
+
+    /* HEAD */
+
+    .logo_DP_min{
+        display: none;
+    }
+
+    .logo_link{
+        display: block;
+        width: 100%;
+    }
+
+
+    /* MAIN */
+
+    .mob-tab{
+        display: none;
+    }
+
+
+}

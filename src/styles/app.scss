@@ -1,6 +1,6 @@
-@import 'components/media';
 @import 'utils/variables';
 @import 'components/type';
+@import 'components/media';
 @import 'components/settingUp';
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
@@ -123,10 +123,10 @@
     transition: color 0.3s;
 }
 
-section{
+/* section{
     width: 100vh;
     background-color: red;
-}
+} */
 
 .const-filters{
     display: block;
