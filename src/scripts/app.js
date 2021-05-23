@@ -11,9 +11,7 @@ Draggable.create(".svg", {type:"x,y", bounds:".container", inertia:true});
 let constWindow = document.querySelector(".star");
 let closeButton = document.querySelector("#trigger");
 let mainTitle = document.querySelector(".title--medium");
-let zodiaqueFilter = document.querySelector('#zodiaque-filter');
-let borealFilter = document.querySelector('#boreal-filter');
-let australFilter = document.querySelector('#austral-filter');
+let filter = document.querySelectorAll("[data-filter]");
 
 let data; // <-- On va stocker les infos du json ici
 /* STEP 1: Créer une fonction qu'on va appeler APRES avoir charger le JSON */
@@ -69,90 +67,58 @@ var activeArea = function (id) {
 
 function initFilterActions(){
     let constList = data.constellations;
+    filter.forEach(element => element.addEventListener('click', toggleFiltering));
 
-    function resetFilters(){
+    
+    function toggleFiltering(){
+        
         for (let i = 0; i < constList.length; i++){
-            let selectedConst = constList[i];
-            let selectedConstElement = document.querySelector("[data-name='"+selectedConst.num+"']")
-
-            console.log(selectedConstElement);
-            if (selectedConstElement !== null && selectedConstElement.classList.contains("not-selected")){
-            selectedConstElement.classList.remove("not-selected");
-            }
+                let selectedConst = constList[i];
+                let selectedConstElement = document.querySelector("[data-name='"+selectedConst.num+"']");
+                selectedConstElement.classList.add("not-selected");             
         }
-    }
-    
-    function toggleZodiacSigns(){
-        resetFilters();
-        borealFilter.checked = false;
-        australFilter.checked = false;
-        if (zodiaqueFilter.checked == true){
-            for (let i = 0; i < constList.length; i++)
-            {
+
+        if(filter[0].checked){
+            for (let i = 0; i < constList.length; i++){
                 let selectedConst = constList[i];
                 let selectedConstElement = document.querySelector("[data-name='"+selectedConst.num+"']")
-                if(!selectedConstElement){
-                    continue;
-                }
                 
-                if (selectedConst.zodiaque === false) 
-                {
-                    selectedConstElement.classList.add("not-selected");
+                if (selectedConst.zodiaque === true){
+                    selectedConstElement.classList.remove("not-selected");
                 }
             }
-        }else{
-            resetFilters();  
         }
-
-    }
-    
-    zodiaqueFilter.addEventListener('click', toggleZodiacSigns);
-
-    function toggleBorealSigns (){
-        resetFilters();
-        zodiaqueFilter.checked = false;
-        australFilter.checked = false;
-        if (borealFilter.checked == true){
+        if (filter[1].checked){
             for (let i = 0; i < constList.length; i++){
                 let selectedConst = constList[i];
                 let selectedConstElement = document.querySelector("[data-name='"+selectedConst.num+"']")
-                if(!selectedConstElement){
-                    continue;
-                }
-                if (selectedConst.boreal === false){
-                    selectedConstElement.classList.add("not-selected");
+                
+                if (selectedConst.boreal === true){
+                    selectedConstElement.classList.remove("not-selected");
                 }
             }
-        }else{
-            resetFilters();
         }
-    }
-    australFilter.addEventListener('click', toggleAustralSigns);
-
-    function toggleAustralSigns (){
-        resetFilters();
-        zodiaqueFilter.checked = false;
-        borealFilter.checked = false;
-        if (australFilter.checked == true){
+        if (filter[2].checked){
             for (let i = 0; i < constList.length; i++){
                 let selectedConst = constList[i];
                 let selectedConstElement = document.querySelector("[data-name='"+selectedConst.num+"']")
-                if(!selectedConstElement){
-                    continue;
-                }
-                if (selectedConst.australe === false){
-                    selectedConstElement.classList.add("not-selected");
+
+                if (selectedConst.australe === true){
+                    selectedConstElement.classList.remove("not-selected");
                 }
             }
-        }else{
-            resetFilters();
+        }
+
+        if(filter[0].checked == false && filter[1].checked == false && filter[2].checked == false ){
+            for (let i = 0; i < constList.length; i++){
+                let selectedConst = constList[i];
+                let selectedConstElement = document.querySelector("[data-name='"+selectedConst.num+"']");
+                selectedConstElement.classList.remove("not-selected");             
+            }
         }
     }
-    borealFilter.addEventListener('click', toggleBorealSigns);
-
 }
-
-
+ 
 
 /* STEP 3: Charger le fichier JSON */
 let myRequest = new Request("./assets/list.json",);

@@ -222,7 +222,7 @@
         "comment":      "",
         "info":         "",
         "num":           "CASS",
-        "boreal":       false,
+        "boreal":       true,
         "australe":     false,
         "zodiaque":     false
     },
@@ -270,7 +270,7 @@
         "comment":      "",
         "info":         "",
         "num":          "COBE",
-        "boreal":       false,
+        "boreal":       true,
         "australe":     false,
         "zodiaque":     false
     },
@@ -286,7 +286,7 @@
         "comment":      "",
         "info":         "",
         "num":          "CAVE",
-        "boreal":       false,
+        "boreal":       true,
         "australe":     false,
         "zodiaque":     false
     },
@@ -590,7 +590,7 @@
         "comment":      "",
         "info":         "",
         "num":          "URMA",
-        "boreal":       false,
+        "boreal":       true,
         "australe":     false,
         "zodiaque":     false
     },
@@ -788,7 +788,7 @@
     },
 
     {   "nom":          "La Lyre", 
-        "nomlatin":     "LyraAntlia",
+        "nomlatin":     "Lyra",
         "ascension":    "Entre 272,625° et 291°",
         "taille":       "286 deg2",
         "classement":   "52ème",
@@ -1201,22 +1201,6 @@
         "boreal":       false,
         "australe":     true,
         "zodiaque":     true
-    },
-
-    {   "nom":          "Le Sculpteur", 
-        "nomlatin":     "Sculptor",
-        "ascension":    "Entre 345° et 25°",
-        "taille":       "475 deg2",
-        "classement":   "36ème",
-        "declinaison":  "Entre -40° et -25,5°",
-        "signification":"",
-        "etoiles":      ["Sculptoris"],
-        "comment":      "",
-        "info":         "",
-        "num":          "SCUL",
-        "boreal":       false,
-        "australe":     true,
-        "zodiaque":     false
     },
 
     {   "nom":          "Le Serpent", 
