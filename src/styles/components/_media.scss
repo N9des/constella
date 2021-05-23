@@ -2,14 +2,113 @@
 @import 'components/type';
 
 
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 700px) {
     
     body{
         padding: 25px;
     }
 
+    /* HEAD */
 
     .logo_DP_min{
         width: 10%;
     }
+
+    /* MAIN */
+
+    .main{
+
+        p{
+            width: 100%;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1250px) {
+    
+    body{
+        display: block;
+        padding: 50px 150px;
+        font-size: 25px;
+
+    }
+
+    /* HEAD */
+
+    .logo_DP_min{
+        display: none;
+    }
+
+    .logo_link{
+        display: block;
+        width: 100%;
+        position: fixed;
+    }
+
+
+    /* MAIN */
+
+    .mob-tab{
+        display: none;
+    }
+
+    .desk{
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .sect01{
+
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+    }
+
+    .article{
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+
+        .title--med{
+            margin-bottom: 50px;
+        }
+    }
+
+    .btn_explore{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin: 60px 0;
+        width: 200px;
+        height: 45px;
+        border: none;
+        border-radius: 30px;
+        background-color: $c-hover;
+        font-size: 25px;
+        font-family: 'Comfortaa';
+        color: #000;
+        font-weight: bold;
+        
+
+        &:hover{
+            background-color: #F88D69;
+        }
+
+    }
+
+    .const-illu{
+        width: 40%;
+    }
+
+
+}
+    
+    
     
     
