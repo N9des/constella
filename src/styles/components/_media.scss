@@ -42,11 +42,27 @@
         display: none;
     }
 
+    .logo_DP--const{
+        margin: 50px 150px;
+        width: 4%;
+        z-index: 3;
+    }
+
+    .logo_link--const{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 30%;
+        z-index: 3;
+    }
+
     .logo_link{
         display: block;
         width: 100%;
         position: fixed;
     }
+
+    
 
 
     /* MAIN */
@@ -70,6 +86,20 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+
+            .const-illu{
+
+                .st0{
+                    stroke: rgba(255, 255, 255, 0.1);
+                    stroke-width: 2px;
+                    fill: transparent;
+                }
+
+                .st2{
+                    color: red;
+                }
+                
+            }
         }
 
         &--02{
@@ -153,7 +183,7 @@
     }
 
     .team_list{
-        font-size: 16px;
+        font-size: 18px;
         font-family: 'Confortaa';
     }
 
