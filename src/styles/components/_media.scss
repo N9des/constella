@@ -63,14 +63,39 @@
     }
 
     .sect{
-        margin-bottom: 50px;
 
         &--01{
             margin-bottom: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
 
         &--02{
             margin-bottom: 100px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+            .box-info{
+                width: 100%;
+            }
+
+            .box-info-img{
+                width: 80%;
+            }
+        }
+
+        &--03{
+            margin-bottom: 100px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
         
     }
@@ -118,19 +143,6 @@
 
     /* FOOTER */
 
-    .footer{
-        /* background-image: url(/assets/images/wave.svg);
-        background-size: cover;
-        background-origin: ; */
-
-
-        /* width: 100vw;
-        height: 30vh;
-
-        display: flex;
-        align-items: center; */
-        
-    }
 
 }
     
