@@ -221,23 +221,8 @@ small{
     transition: color 0.3s;
 }
 
-.const-filters{
-    display: block;
-    position: fixed;
-    right: auto;
-    left: 5vw;
-    top: auto;
-    bottom: 5vh;
-    background-color: black;
-    padding: 1rem;
-    z-index: 1;
-}
-
 
 .not-selected{
     opacity: 0.1;
 }
 
-label{
-    margin-right: 30px;
-}

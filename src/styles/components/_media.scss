@@ -167,7 +167,20 @@
     }
 
     
-
+    .const-filters{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        margin: 50px 150px;
+        left: 0;
+        bottom: 0;
+        background-color: $c-box;
+        list-style: none;
+        border-radius: 8px;
+        padding: 1rem;
+        z-index: 1;
+    }
 
 
     /* FOOTER */
