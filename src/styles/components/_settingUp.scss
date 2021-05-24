@@ -120,15 +120,10 @@ small{
   circle{
       fill: black;
   }
-/*   .svg {
-    width: 300vw;
-    background: url(../assets/images/104426.jpg);
-    background-size: cover;
-    
-  } */
+
 .svg {
     width: 300vw;
-    background-image: url(/assets/images/bg_acc.png);
+     background-image: url(/assets/images/bg_acc.png);
     background-size: repeat;
 }
 *{
@@ -149,10 +144,6 @@ small{
     background-color: red;
     width: 20vw;
     padding: 1rem;
-}
-
-.map__image{
-    width: 200vw;
 }
 
 .st0{
@@ -205,22 +196,6 @@ small{
     stroke-linecap:square;
     stroke-linejoin:round;
 }
-
-.map__list{
-    position: absolute;
-    width: 30vw;
-    top: 10vh;
-    right: 10vw;
-    left: auto;
-
-}
-
-.map__list {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
 
 .not-selected{
     opacity: 0.1;
