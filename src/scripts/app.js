@@ -62,7 +62,7 @@ var activeArea = function (id) {
     let constIsZodiac=      rawData[13];
 
     mainTitle.innerHTML= constName;
-    
+
 }
 
 function initFilterActions(){
