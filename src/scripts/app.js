@@ -10,7 +10,17 @@ Draggable.create("#stars", {type:"x,y", bounds:".container", inertia:true});
 
 let constWindow = document.querySelector(".star");
 let closeButton = document.querySelector("#trigger");
-let mainTitle = document.querySelector(".title--medium");
+let mainTitle = document.querySelector(".title--med");
+let ascension = document.getElementById("ascension");
+let declinaison = document.getElementById("declinaison");
+let etoilePr = document.getElementById("etoilePr");
+let taille = document.getElementById("taille");
+let ordre = document.getElementById("ordre");
+let boreal = document.getElementById("boreal");
+let australe = document.getElementById("australe");
+let zodiac = document.getElementById("zodiac");
+let comment = document.getElementById("comment");
+let info = document.getElementById("info");
 let filter = document.querySelectorAll("[data-filter]");
 
 let data; // <-- On va stocker les infos du json ici
@@ -62,6 +72,16 @@ var activeArea = function (id) {
     let constIsZodiac=      rawData[13];
 
     mainTitle.innerHTML= constName;
+    ascension.innerHTML= constAscension;
+    declinaison.innerHTML= constDeclin;
+    etoilePr.innerHTML= constStars;
+    taille.innerHTML= constSize;
+    ordre.innerHTML= constClass;
+    boreal.innerHTML= constIsBoreal;
+    australe.innerHTML= constIsAustrale;
+    zodiac.innerHTML= constIsZodiac;
+    comment.innerHTML= constComment;
+    info.innerHTML= constInfo;
 
 }
 

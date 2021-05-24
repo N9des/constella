@@ -216,6 +216,45 @@
         color: #fff;
     }
 
+    /* box info */
+    
+    .star{
+        color: white;
+        display: none;
+    }
+    
+    .star--active{
+        display: block;
+        position: fixed;
+        right: 10vw;
+        left: auto;
+        background-color: $c-box;
+        border-radius: 8px;
+        width: 40%;
+        height: 60%;
+        padding: 2rem;
+
+        .title--med{
+            margin-bottom: 25px;
+        }
+    }
+
+    .list_info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .chiffre{
+        width: 30%;
+    }
+
+    .chiffre_list, .info_list{
+        list-style: none;
+    }
+
+    
+
     /* FOOTER */
 
     .footer{
