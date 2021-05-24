@@ -185,9 +185,10 @@
     }
 
     .checkbox{
+        margin-right: 3px;
         -webkit-appearance: none;
         background-color: #fafafa;
-        border: 1px solid #cacece;
+        border: 1px solid $c-visited;
         box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
         padding: 9px;
         border-radius: 3px;
@@ -200,8 +201,8 @@
     }
 
     .checkbox:checked {
-        background-color: #e9ecee;
-        border: 1px solid #adb8c0;
+        background-color: $c-visited;
+        border: 1px solid $c-visited;
         box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
         color: #99a1a7;
     }
@@ -212,7 +213,7 @@
         position: absolute;
         top: 0px;
         left: 3px;
-        color: #99a1a7;
+        color: #fff;
     }
 
     /* FOOTER */
