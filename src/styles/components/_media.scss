@@ -31,8 +31,8 @@
     
     body{
         display: block;
-        padding: 0px 150px 50px 150px;
         font-size: 20px;
+        padding: 0;
 
     }
 
@@ -76,6 +76,7 @@
         display: flex;
         flex-direction: column;
         align-content: space-around;
+        padding: 0px 150px 50px 150px;
     }
 
     .sect{
@@ -258,19 +259,16 @@
     /* FOOTER */
 
     .footer{
-        padding: 0 150px;
-        padding-top: 150px;
+        padding: 40px 150px;
         width: 100vw;
-        height: 30vh;
         position: fixed;
         bottom: 0;
         left: 0;
+        background-image: url(../../assets/images/wave.svg);
+        background-size: cover;
+
     }
 
-    .team_list{
-        font-size: 18px;
-        font-family: 'Confortaa';
-    }
 
 
 }

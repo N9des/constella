@@ -28,7 +28,8 @@ body{
 
 .navbar{
     position: fixed; /* Make it stick/fixed */
-    top: 50px; 
+    top: 50px;
+    left: 150px; 
     transition: top 0.3s
 }
 
@@ -90,19 +91,23 @@ body{
 .team_list{
     list-style: none;
     text-align: right;
-    font-size: 16px;
 }
 
 .team_link{
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-family: 'Comfortaa';
     color: $c-bg;
-}
+    transition: all 200ms;
 
-.team_link:hover{
-    color: $c-hover;
-}
+    &:hover{
+        color: $c-hover;
+        text-decoration: underline;
+    }
 
-.team_link:visited{
-    color: $c-visited;
+    &:visited{
+        color: $c-visited;
+    }
 }
 
 
