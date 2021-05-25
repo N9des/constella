@@ -236,7 +236,7 @@
         "declinaison":  "52,75° et 88,0°",
         "etoiles":      [ "Alderamin", "Alfirk", "Errai"],
         "comment":      "",
-        "info":         "",
+        "info":         "Pour les Arabes, c'était l'écuelle des pauvres ; pour les Indiens d'Amérique du Nord un groupe de danseuses. <br><br> Il s'agit en fait de la couronne d'Ariane, princesse de Crète qui alla jusqu'à trahir son père Minos pour aider Thésée à vaincre le Minotaure et le Labyrinthe de Dédale.<br><br> Malheureusement, Thésée délaissa la pauvre jeune femme sur l'île de Naxos. Effondrée par le chagrin, elle attendrit toutefois le cœur de Dionysos qui en fit sa compagne et plaça sa couronne dans les cieux.",
         "num":          "CEPH",
         "boreal":       true,
         "australe":     false,
@@ -1263,7 +1263,7 @@
         "zodiaque":     false
     },
     
-    {   "nom":          "Le Verseau", 
+    {   "nom":          "&#9810; Le Verseau", 
         "nomlatin":     "Aquarius",
         "ascension":    "308° et 357,5°",
         "taille":       "980 deg2",
