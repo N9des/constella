@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
 @import 'utils/variables';
 
 
 body {
   font-family: 'Crimson Text';
-  font-size: $size-text;
   line-height: 1.5;
   color: $c-bg;
+  font-size: 18px;
 }
 
 .title {
@@ -22,7 +24,7 @@ body {
   &--med{
     font-family: 'Comfortaa';
     font-size: 42px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   &--small{

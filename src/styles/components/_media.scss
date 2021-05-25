@@ -4,7 +4,7 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: $tablet) {
     
     body{
         padding: 25px;
@@ -27,16 +27,20 @@
     
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: $med-screen) {
     
     body{
         display: block;
-        padding: 50px 150px;
-        font-size: 25px;
+        padding: 0px 150px 50px 150px;
+        font-size: 20px;
 
     }
 
     /* HEAD */
+
+    .logo_DP{
+        width: 15vw;
+    }
 
     .logo_DP_min{
         display: none;
@@ -46,6 +50,9 @@
         width: 4%;
         z-index: 3;
     }
+    .logo_link{
+        display: block;
+    }
 
     .logo_link--const{
         position: relative;
@@ -53,12 +60,6 @@
         left: 0;
         width: 30%;
         z-index: 3;
-    }
-
-    .logo_link{
-        display: block;
-        width: 100%;
-        position: fixed;
     }
 
     
@@ -71,7 +72,6 @@
     }
 
     .desk{
-        margin-top: 200px;
         display: flex;
         flex-direction: column;
         align-content: space-around;
@@ -85,6 +85,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            height: 100vh;
 
             .const-illu{
 
@@ -131,13 +132,11 @@
     }
 
     .article{
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
         max-width: 50%;
 
-        .title--med{
-            margin-bottom: 50px;
-        }
     }
 
     .btn_explore{
@@ -274,7 +273,12 @@
 
 
 }
-    
+
+@media screen and (min-width: $big-screen) {
+    body{
+        font-size: 25px;
+    }
+}
     
     
     

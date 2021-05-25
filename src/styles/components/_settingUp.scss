@@ -26,6 +26,11 @@ body{
 
 /* header */
 
+.navbar{
+    position: fixed; /* Make it stick/fixed */
+    top: 50px; 
+}
+
 .logo_DP_min{
     width: 20%;
 }
