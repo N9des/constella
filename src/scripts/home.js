@@ -1,4 +1,5 @@
 "use strict";
+
 var prevScrollpos = window.pageYOffset;
 let navBar = document.querySelector(".navbar");
 window.onscroll = function() {
