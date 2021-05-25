@@ -50,6 +50,7 @@
         width: 4%;
         z-index: 3;
         margin-top: 50px;
+        margin-left: 150px;
     }
     .logo_link{
         display: block;
@@ -225,6 +226,7 @@
     }
     
     .star--active{
+        user-select: none;
         display: block;
         position: fixed;
         right: 10vw;
@@ -260,13 +262,13 @@
 
     .footer{
         padding: 40px 150px;
+        padding: 60px 150px 40px 150px;
         width: 100vw;
         position: fixed;
         bottom: 0;
         left: 0;
         background-image: url(../../assets/images/wave.svg);
         background-size: cover;
-
     }
 
 

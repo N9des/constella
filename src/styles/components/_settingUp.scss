@@ -34,6 +34,7 @@ body{
 }
 
 .logo_DP_min{
+    
     width: 20%;
 }
 
@@ -81,16 +82,43 @@ body{
 
 .DWM_list{
     list-style: none;
+
 }
 
 .logoDWM{
     width: 100%;
+    height: 20px;
 }
 
+.DWM_El{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fixed-ln{
+    line-height: 1;
+
+}
 
 .team_list{
     list-style: none;
     text-align: right;
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.team_El{
+    margin-left: 20px;
+}
+
+.copyright{
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-family: 'Comfortaa';
+    color: $c-bg;
+    transition: all 200ms;
 }
 
 .team_link{
