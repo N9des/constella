@@ -29,6 +29,7 @@ body{
 .navbar{
     position: fixed; /* Make it stick/fixed */
     top: 50px; 
+    transition: top 0.3s
 }
 
 .logo_DP_min{

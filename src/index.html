@@ -9,7 +9,7 @@
   <!-- Meta Partage -->
   <!-- Favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="scripts/main.js" defer></script>
+
   <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
@@ -131,6 +131,20 @@
             </li>
         </ul>
     </footer>
-
+    <script>
+        "use strict";
+        var prevScrollpos = window.pageYOffset;
+        let navBar = document.querySelector(".navbar");
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                console.log(navBar);
+            navBar.style.top = "50px";
+            } else {
+            navBar.style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 </html>
