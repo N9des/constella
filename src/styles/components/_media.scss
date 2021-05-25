@@ -82,6 +82,41 @@
         padding: 0px 150px 50px 150px;
     }
 
+    .rt0{
+        clip-path:url(#SVGID_2_);
+    }
+
+    .rt1{
+        fill:none;
+        animation-duration: 6s;
+        stroke-dasharray:1 60;
+        stroke:#FFFFFF;
+        animation: constella linear infinite; 
+    }
+    
+    @keyframes constella {
+        
+        0% {
+            stroke-dasharray:1 60; 
+        }
+        25% {
+            stroke-dasharray:4 60; 
+        }
+        50% {
+            stroke-dasharray:5 30; 
+        }
+        95% {
+            stroke-dasharray:6 15;  
+        }
+        100% {
+            stroke-dasharray:6 15;  
+        }
+    }
+
+    .rt2{
+        fill:#1DBAE1;
+    }
+
     .sect{
 
         &--01{
