@@ -83,7 +83,6 @@ var activeArea = function (id) {
 let size = taille.innerHTML.replace(" deg2", "");
 let classement = ordre.innerHTML.replace("ème", "");
 let highlights = [size, classement];
-console.log(highlights);
 
 for (let i = 0; i < highlights.length; i++){
 
