@@ -188,7 +188,7 @@
         
 
         &:hover{
-            background-color: #F88D69;
+            background-color: #f8b669;
         }
 
     }
@@ -362,7 +362,11 @@
     }
 
     .team_link{
-        color: $c-bg;
+        color: #FFFFFF;
+
+        &:visited{
+            color: #f8b669;
+        }
     }
 
 
