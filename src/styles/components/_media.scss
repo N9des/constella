@@ -130,6 +130,8 @@
 
     .sect{
 
+        overflow: hidden;
+
         &--01{
             margin-bottom: 300px;
             display: flex;
@@ -137,6 +139,7 @@
             justify-content: space-between;
             align-items: center;
             height: 100vh;
+
 
             .const-illu{
 
