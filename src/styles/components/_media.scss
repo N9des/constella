@@ -161,10 +161,13 @@
 
             .const-img{
                 width: 80%;
+            &-image,&-article{
                 opacity: 0;
                 transform: translateX(-500px);
                 transition: 1s ease-in-out;
+                transform: translateY(90px);
             }
+
         }
 
         &--03{
@@ -176,9 +179,11 @@
             align-items: center;
 
             .box-info-img{
+            &-image,&-article{
                 opacity: 0;
                 transform: translateX(1000px);
                 transition: 1s ease-in-out;
+                transform: translateY(90px);
             }
         }
         
