@@ -36,6 +36,87 @@
 
     }
 
+    /* LOADER */
+
+    .vis-hidden{
+        opacity: 0;
+    }
+
+    .loader{
+        font-family: 'Comfortaa';
+        z-index: 10;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: $c-box02;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-out;
+    }    
+
+    .letter{
+        color: $c-bg;
+        font-size: 70px;
+        letter-spacing: 15px;
+        margin-bottom: 100px;
+        animation: flash 1.2s ease-in-out infinite;
+    }
+    
+    .texte{
+        color: $c-bg;
+        font-size: 70px;
+        letter-spacing: 15px;
+        margin-bottom: 100px;
+    }
+    
+    @keyframes flash{
+        0%{
+            transform: translateY(0px);
+            
+        }
+        50%{
+            transform: translateY(-20px);
+           
+            
+        }
+        100%{
+            transform: translateY(0px);
+               
+        }
+    
+    } 
+    
+    /* @keyframes flash{
+        from{
+            transform: translateY(30px);
+            
+        }
+        
+        to{
+            transform: translateY(0px);
+            opacity: 0.4;     
+        }
+    } */
+    
+    
+    .letter:nth-child(1){
+        animation-delay: 0.5s;
+    }
+    .letter:nth-child(2){
+        animation-delay: 0.75s;
+    }
+    .letter:nth-child(3){
+        animation-delay: 1s;
+    }
+    
+    .fondu-out{
+        opacity: 0;
+        transition: opacity 0.4s ease-out;
+    }
+
+
+
 
 
     /* HEAD */
@@ -163,7 +244,7 @@
                 width: 80%;
                 opacity: 0;
                 transform: translateX(-500px);
-                transition: 1s ease-in-out;
+                transition: 1.5s ease-in-out;
             }
         }
 
@@ -178,7 +259,7 @@
             .box-info-img{
                 opacity: 0;
                 transform: translateX(1000px);
-                transition: 1s ease-in-out;
+                transition: 1.5s ease-in-out;
             }
         }
         
@@ -195,13 +276,13 @@
     #sect02-article{
         opacity: 0;
         transform: translateX(1000px);
-        transition: 1s ease-in-out; 
+        transition: 1.5s ease-in-out; 
     }
 
     #sect03-article{
         opacity: 0;
         transform: translateX(-500px);
-        transition: 1s ease-in-out;
+        transition: 1.5s ease-in-out;
     }
 
 
