@@ -88,28 +88,26 @@
 
     .rt1{
         fill:none;
-        animation-duration: 6s;
-        stroke-dasharray:1 60;
+        stroke-dasharray: 0; 
         stroke:#FFFFFF;
-        animation: constella linear infinite; 
+        animation: constella linear; 
+        animation-duration: 5s;
     }
     
     @keyframes constella {
         
         0% {
-            stroke-dasharray:1 60; 
+            stroke-dasharray:1 60;
+            opacity: 0;
         }
-        25% {
-            stroke-dasharray:4 60; 
+
+        50%{
+            opacity: 0.3;
         }
-        50% {
-            stroke-dasharray:5 30; 
-        }
-        95% {
-            stroke-dasharray:6 15;  
-        }
+
         100% {
-            stroke-dasharray:6 15;  
+            stroke-dasharray:350 0;  
+            opacity: 1;
         }
     }
 

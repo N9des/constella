@@ -94,7 +94,6 @@
 
     {   "nom":          "La Boussole", 
         "nomlatin":     "Pyxis",
-        "type":         ["Australe"], 
         "ascension":    "125,0° et 140,5°",
         "taille":       "221 deg2",
         "classement":   "65ème",
@@ -918,7 +917,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "&#57652; Le Petit Cheval", 
+    {   "nom":          "Le Petit Cheval", 
         "nomlatin":     "Equuleus",
         "ascension":    "312,5° et 320,0°",
         "taille":       "72 deg2",
