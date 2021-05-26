@@ -14,9 +14,6 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-
-let sect02Art = document.getElementById("sect02-article");
-let sect02Img = document.querySelector(".const-img");
 let scrollV = 0;
 let shown1 = false;
 let shown2 = false;
