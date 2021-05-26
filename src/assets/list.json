@@ -235,7 +235,7 @@
         "declinaison":  "52,75° et 88,0°",
         "etoiles":      [ "Alderamin", "Alfirk", "Errai"],
         "comment":      "",
-        "info":         "Dans la mythologie grecque, Céphée était l'époux de Cassiopée et le père d'Andromède. Ces trois personnages se retrouvent dans la même région du ciel. <br>En raison de la précession des équinoxes, le rôle d'étoile polaire a échu à des étoiles de cette constellation il y a plus de 20 000 ans ! <br/>",
+        "info":         "Dans la mythologie grecque, Céphée était l'époux de Cassiopée et le père d'Andromède. Ces trois personnages se retrouvent dans la même région du ciel. <br>En raison de la précession des équinoxes, le rôle d'étoile polaire a échu à des étoiles de cette constellation il y a plus de 20&nbsp;000&nbsp;ans&nbsp;! <br/>",
         "num":          "CEPH",
         "boreal":       true,
         "australe":     false,

@@ -324,6 +324,19 @@
 
     }
 
+    .close_info-box{
+        width: 35px;
+        height: 35px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        .close_ico{
+            width: 100%;
+
+        }
+    }
+
     .box_infos{
         display: flex;
         flex-direction: row;
