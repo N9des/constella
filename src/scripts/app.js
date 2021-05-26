@@ -95,7 +95,12 @@ for (let i = 0; i < highlights.length; i++){
           if (i == 0){
             taille.innerHTML = Math.floor(progress * (end - start) + start)+" deg2";
           }else{
-            ordre.innerHTML = Math.floor(progress * (end - start) + start)+"ème";
+              if (selectedHighlight == 1){
+                ordre.innerHTML = "1er";
+
+              }else{
+                  ordre.innerHTML = Math.floor(progress * (end - start) + start)+"ème";
+              }
           }
           if (progress < 1) {
             window.requestAnimationFrame(step);
