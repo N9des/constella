@@ -91,7 +91,7 @@
         stroke-dasharray: 0; 
         stroke:#FFFFFF;
         animation: constella linear; 
-        animation-duration: 6s;
+        animation-duration: 5s;
     }
     
     @keyframes constella {
@@ -106,7 +106,7 @@
         }
 
         100% {
-            stroke-dasharray:6;  
+            stroke-dasharray:350 0;  
             opacity: 1;
         }
     }
