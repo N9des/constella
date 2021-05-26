@@ -121,6 +121,7 @@ for (let i = 0; i < highlights.length; i++){
 function initFilterActions(){
     let constList = data.constellations;
 
+    // Montrer/cacher les filtres  
     filterTrigger.addEventListener('click', showFilters);
     function showFilters(){
         filterWrap.forEach(element => element.classList.toggle("const-filters__el--active"));
