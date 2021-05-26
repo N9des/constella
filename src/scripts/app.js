@@ -78,7 +78,9 @@ var activeArea = function (id) {
     ordre.innerHTML= constClass;
     info.innerHTML= constInfo;
     nomlatin.innerHTML = constLatinName;
-// --------------------------
+
+
+// Compteurs popup
 
 let size = taille.innerHTML.replace(" deg2", "");
 let classement = ordre.innerHTML.replace("ème", "");
@@ -93,7 +95,7 @@ for (let i = 0; i < highlights.length; i++){
           const progress = Math.min((timestamp - startTimestamp) / duration, 1);
           
           if (i == 0){
-            taille.innerHTML = Math.floor(progress * (end - start) + start)+" deg2";
+            taille.innerHTML = Math.floor(progress * (end - start) + start)+" deg²";
           }else{
               if (selectedHighlight == 1){
                 ordre.innerHTML = "1er";
@@ -119,14 +121,26 @@ for (let i = 0; i < highlights.length; i++){
 function initFilterActions(){
     let constList = data.constellations;
 
+    // Montrer/cacher les filtres  
     filterTrigger.addEventListener('click', showFilters);
     function showFilters(){
         filterWrap.forEach(element => element.classList.toggle("const-filters__el--active"));
+
+        let tl = gsap.timeline();
+        tl.to("#round1", {x: 170, duration: 0.5})
+          .to("#round1", {x: 50, duration: 0.2})
+          .to("#round1", {x: 0, duration: 0.3})
+          .to("#round2", {x:-180, duration: 0.6}, "-=1")
+          .to("#round2", {x:0, duration: 0.4})
+          .to("#round3", {x: 60, duration: 0.3}, "-=2")
+          .to("#round3", {x: -45, duration: 0.4})
+          .to("#round3", {x: 0, duration: 0.2});
     }
 
     filter.forEach(element => element.addEventListener('click', toggleFiltering));
 
-    
+    // Filtres constelations 
+
     function toggleFiltering(){
         
         for (let i = 0; i < constList.length; i++){

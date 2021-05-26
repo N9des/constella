@@ -227,7 +227,11 @@
 
     }
 
-    
+    .map{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     
     .const-filters{
@@ -259,6 +263,7 @@
         padding: 0;
         background-color: transparent;
         border: none;
+        cursor: pointer;
 
         .filtre_ico{
            width: 35px;
@@ -348,11 +353,17 @@
     }
 
     .close_info-box{
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
         background-color: transparent;
         border: none;
         cursor: pointer;
+        opacity: 0.6;
+        transition: ease 200ms;
+
+        &:hover{
+            opacity: 1;
+        }
 
         .close_ico{
             width: 100%;

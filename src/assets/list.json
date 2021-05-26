@@ -730,7 +730,7 @@
         "declinaison":  "33,5° et 62°",
         "etoiles":      [ "Lyncis"],
         "comment":      "",
-        "info":         "Pauvre en étoiles, cette constellation fut imaginée par Hevelius vers 1660 pour combler un vide dans cette région. Il a écrit à ce propos : Il n'y a là que de petites étoiles et il faut avoir des yeux de lynx pour les distinguer. (...). Le ciel est trop vide par là pour qu'on laisse ce vide sans le remplir.",
+        "info":         "Pauvre en étoiles, cette constellation fut imaginée par Hevelius vers 1660 pour combler un vide dans cette région. Il a écrit à ce propos : Il n'y a là que de petites étoiles et il faut avoir des yeux de lynx pour les distinguer. (...).<br><br> Le ciel est trop vide par là pour qu'on laisse ce vide sans le remplir.",
         "num":          "LYNX",
         "boreal":       true,
         "australe":     false,
