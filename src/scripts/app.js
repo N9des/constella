@@ -80,24 +80,41 @@ var activeArea = function (id) {
     nomlatin.innerHTML = constLatinName;
 // --------------------------
 
-let classement = taille.innerHTML;
-classement = classement.replace(" deg2", "");
-function animateValue(obj, start, end, duration) {
-    let startTimestamp = null;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      obj.innerHTML = Math.floor(progress * (end - start) + start)+" deg2";
-      if (progress < 1) {
+let size = taille.innerHTML.replace(" deg2", "");
+let classement = ordre.innerHTML.replace("ème", "");
+let highlights = [size, classement];
+
+for (let i = 0; i < highlights.length; i++){
+
+    function animateValue(selectedHighlight, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          
+          if (i == 0){
+            taille.innerHTML = Math.floor(progress * (end - start) + start)+" deg2";
+          }else{
+              if (selectedHighlight == 1){
+                ordre.innerHTML = "1er";
+
+              }else{
+                  ordre.innerHTML = Math.floor(progress * (end - start) + start)+"ème";
+              }
+          }
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          }
+        };
         window.requestAnimationFrame(step);
       }
-    };
-    window.requestAnimationFrame(step);
-  }
-  
-  const obj = document.getElementById('taille');
-  animateValue(obj, 100, classement, 450);
+      
+      let selectedHighlight = highlights[i];
+      animateValue(selectedHighlight, 100, selectedHighlight, 450);
+    }
+
 }
+
 
 function initFilterActions(){
     let constList = data.constellations;
