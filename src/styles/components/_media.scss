@@ -197,7 +197,6 @@
 
     
     .const-filters{
-        width: 30%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -210,9 +209,17 @@
         border-radius: 8px;
         padding: 1rem;
         z-index: 1;
-
-
     }
+
+    .const-filters__el{
+        display: none;
+
+        &--active{
+            display: block;
+        }
+    }
+
+
 
     .checkbox{
         margin-right: 3px;
@@ -255,23 +262,42 @@
     .star{
         color: white;
         display: none;
-    }
-    
-    .star--active{
-        user-select: none;
-        display: block;
         position: fixed;
-        right: 10vw;
+        right: 5vw;
         left: auto;
         background-color: $c-box02;
         border-radius: 8px;
-        width: 40%;
-        height: 60%;
+        max-width: 45vw;
         padding: 2rem;
+        user-select: none;
+    }
+    
+    .star--active{
+        display: block;
+    }
+    .const-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
-        .title--med{
-            margin-bottom: 25px;
+    .consttitles{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding-bottom: 30px;
+        &__name{
+            margin: 0;
+            color: white;
+            font-family: "Comfortaa";
         }
+
+        &__latinname{
+            margin: 0 0 0.25rem 10px;
+            color: $c-hover;
+        }
+
     }
 
     .box_infos{
@@ -288,7 +314,6 @@
 
     .chiffre_list{
         list-style: none;
-        padding-bottom: 2rem;
 
         .title--info{
             font-weight: 300;
@@ -297,6 +322,10 @@
 
     .chiffre_list_El{
         padding-bottom: 1.5rem;
+
+        &:last-of-type{
+            padding-bottom: 0;
+        }
     }
 
     .highlight{
@@ -304,11 +333,18 @@
         font-weight: bold;
     }
 
+    .infos-container{
+        width: 60%;
+        max-height: 46vh;
+        overflow-y: scroll;
+        padding-right: 1rem;
+    }
+
     .infos{
         font-size: 20px;
         line-height: 27px;
         font-weight: 300;
-        width: 60%;
+
     }
 
     
@@ -337,6 +373,8 @@
     body{
         font-size: 25px;
     }
+
+    
 }
     
     

@@ -1,7 +1,7 @@
 {  
 
     "constellations":[ 
-        {"nom":         "L'Aigle", 
+        {"nom":         "&#129413; L'Aigle", 
         "nomlatin":     "Aquila",
         "ascension":    "278,75° et 308,00°",
         "taille":       "652 deg2",
@@ -47,7 +47,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "La Balance", 
+    {   "nom":          "&#9806; La Balance", 
         "nomlatin":     "Libra",
         "ascension":    "213,75° et 238,75°",
         "taille":       "538 deg2",
@@ -62,7 +62,7 @@
         "zodiaque":     true
     },
 
-    {   "nom":          "La Baleine", 
+    {   "nom":          "&#128011; La Baleine", 
         "nomlatin":     "Cetus",
         "ascension":    "357,50° et 49,25°",
         "taille":       "1 231 deg2",
@@ -77,7 +77,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Bélier", 
+    {   "nom":          "&#9810; Le Bélier", 
         "nomlatin":     "Aries",
         "ascension":    "25,0° et 50,5°",
         "taille":       "441 deg2",
@@ -153,7 +153,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Cancer", 
+    {   "nom":          "&#9803; Le Cancer", 
         "nomlatin":     "Cancer",
         "ascension":    "117,125° et 138,75°",
         "taille":       "506 deg2",
@@ -168,7 +168,7 @@
         "zodiaque":     true
     },
 
-    {   "nom":          "Le Capricorne", 
+    {   "nom":          "&#9809; Le Capricorne", 
         "nomlatin":     "Capricornus",
         "ascension":    "300° et 328°",
         "taille":       "414 deg2",
@@ -198,7 +198,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Cassiopée", 
+    {   "nom":          "&#128013; Cassiopée", 
         "nomlatin":     "Cassiopeia",
         "ascension":    "343,0° et 51,25°",
         "taille":       "598 deg2",
@@ -288,7 +288,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "La Colombe", 
+    {   "nom":          "&#128330; La Colombe", 
         "nomlatin":     "Columba",
         "ascension":    "75° et 98,75°",
         "taille":       "270 deg2",
@@ -393,7 +393,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Dauphin", 
+    {   "nom":          "&#128044; Le Dauphin", 
         "nomlatin":     "Delphinus",
         "ascension":    "302,125° et 315,75°",
         "taille":       "189 deg2",
@@ -408,7 +408,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "La Dorade", 
+    {   "nom":          "&#128031; La Dorade", 
         "nomlatin":     "Dorado",
         "ascension":    "57,5° et 98,75°",
         "taille":       "179 deg2",
@@ -423,7 +423,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Dragon", 
+    {   "nom":          "&#128009; Le Dragon", 
         "nomlatin":     "Draco",
         "ascension":    "137,5° et 315,0°",
         "taille":       "1 083 deg2",
@@ -468,7 +468,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "La Flèche", 
+    {   "nom":          "&#127993; La Flèche", 
         "nomlatin":     "Sagitta",
         "ascension":    "283° et 303,75°",
         "taille":       "80 deg2",
@@ -498,7 +498,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Les Gémeaux", 
+    {   "nom":          "&#9802; Les Gémeaux", 
         "nomlatin":     "Gemini",
         "ascension":    "88,25° et 120°",
         "taille":       "514 deg2",
@@ -513,7 +513,7 @@
         "zodiaque":     true
     },
 
-    {   "nom":          "La Girafe", 
+    {   "nom":          "&#129426; La Girafe", 
         "nomlatin":     "Camelopardalis",
         "ascension":    "46,5° et 217,5°",
         "taille":       "757 deg2",
@@ -588,7 +588,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "L'Horloge", 
+    {   "nom":          "&#128337; L'Horloge", 
         "nomlatin":     "Horologium",
         "ascension":    "32,5° et 64°",
         "taille":       "249 deg2",
@@ -648,7 +648,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Lézard", 
+    {   "nom":          "&#129422; Le Lézard", 
         "nomlatin":     "Lacerta",
         "ascension":    "328,125° et 343°",
         "taille":       "201 deg2",
@@ -663,7 +663,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "La Licorne", 
+    {   "nom":          "&#129412; La Licorne", 
         "nomlatin":     "Monoceros",
         "ascension":    "87,5° et 121,25°",
         "taille":       "482 deg2",
@@ -678,7 +678,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Lièvre", 
+    {   "nom":          "&#128007; Le Lièvre", 
         "nomlatin":     "Lepus",
         "ascension":    "72,5° et 91,75°",
         "taille":       "290 deg2",
@@ -693,7 +693,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Lion", 
+    {   "nom":          "&#9804; Le Lion", 
         "nomlatin":     "Leo",
         "ascension":    "138,75° et 178°",
         "taille":       "947 deg2",
@@ -708,7 +708,7 @@
         "zodiaque":     true
     },
 
-    {   "nom":          "Le Loup", 
+    {   "nom":          "&#128058; Le Loup", 
         "nomlatin":     "Lupus",
         "ascension":    "212,5° et 240°",
         "taille":       "334 deg2",
@@ -768,7 +768,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Microscope", 
+    {   "nom":          "&#128300; Le Microscope", 
         "nomlatin":     "Microscopium",
         "ascension":    "305° et 320°",
         "taille":       "210 deg2",
@@ -828,7 +828,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Ophiuchus", 
+    {   "nom":          "&#9934; Ophiuchus", 
         "nomlatin":     "Ophiuchus",
         "ascension":    "238,75° et 279,93°",
         "taille":       "948 deg2",
@@ -918,7 +918,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Petit Cheval", 
+    {   "nom":          "&#57652; Le Petit Cheval", 
         "nomlatin":     "Equuleus",
         "ascension":    "312,5° et 320,0°",
         "taille":       "72 deg2",
@@ -933,7 +933,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Petit Chien", 
+    {   "nom":          "&#128021; Le Petit Chien", 
         "nomlatin":     "Canis Minor",
         "ascension":    "105,0° et 121,25°",
         "taille":       "183 deg2",
@@ -948,7 +948,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Petit Lion", 
+    {   "nom":          "&#129409; Le Petit Lion", 
         "nomlatin":     "Leo Minor",
         "ascension":    "138,75° et 165,0°",
         "taille":       "232 deg2",
@@ -1038,7 +1038,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Les Poissons", 
+    {   "nom":          "&#9811; Les Poissons", 
         "nomlatin":     "Pisces",
         "ascension":    "341,25° et 30°",
         "taille":       "889 deg2",
@@ -1098,7 +1098,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Sagittaire", 
+    {   "nom":          "&#9808; Le Sagittaire", 
         "nomlatin":     "Sagittarius",
         "ascension":    "264° et 305°",
         "taille":       "867 deg2",
@@ -1113,7 +1113,7 @@
         "zodiaque":     true
     },
 
-    {   "nom":          "Le Scorpion", 
+    {   "nom":          "&#9807; Le Scorpion", 
         "nomlatin":     "Scorpius",
         "ascension":    "235° et 267,5°",
         "taille":       "497 deg2",
@@ -1128,22 +1128,8 @@
         "zodiaque":     true
     },
 
-    {   "nom":          "Le Sculpteur", 
-        "nomlatin":     "Sculptor",
-        "ascension":    "345° et 25°",
-        "taille":       "475 deg2",
-        "classement":   "36ème",
-        "declinaison":  "-40° et -25,5°",
-        "etoiles":      [ "Sculptoris"],
-        "comment":      "",
-        "info":         "Ce groupe d'étoiles fut initialement baptisé l'Atelier du Sculpteur par Lacaille, en hommage à ces artistes qui pétrissent la glaise et l'argile pour créer des figures artistiques.",
-        "num":          "SERB",
-        "boreal":       true,
-        "australe":     true,
-        "zodiaque":     false
-    },
 
-    {   "nom":          "Le Serpent", 
+    {   "nom":          "&#128013; Le Serpent", 
         "nomlatin":     "Serpens",
         "ascension":    "226,25° et 283°",
         "taille":       "637 deg2",
@@ -1153,6 +1139,21 @@
         "comment":      "",
         "info":         "C'est en 1939 que l'Union Astronomique internationale décida d'adopter un système de normalisation des contours des diverses constellations. <br>Après avoir éliminé toutes celles qui se révélaient trop imprécises et/ou fantaisistes, il n'en resta plus que 88. <br/> <br>Sur les cartes anciennes, cette constellation était réunie avec celle d'Ophiuchus ; et l'ensemble ainsi formé portait le nom de Serpentaire, figurant Asklépios, le fils d'Apollon et dieu de la médecine. <br/> <br>La constellation est en fait divisée en deux : Serpens Cauda, la queue du serpent, et Serpens Caput, la tête du serpent. Depuis 1930, cette constellation fait partie du zodiaque astronomique, mais pas du zodiaque astrologique.<br/>",
         "num":          "SERP",
+        "boreal":       true,
+        "australe":     true,
+        "zodiaque":     false
+    },
+
+    {   "nom":          "&#128013; Le Serpent", 
+        "nomlatin":     "Serpens",
+        "ascension":    "226,25° et 283°",
+        "taille":       "637 deg2",
+        "classement":   "23ème",
+        "declinaison":  "-16° et 26°",
+        "etoiles":      [ "Unakalhai", "Alya"],
+        "comment":      "",
+        "info":         "C'est en 1939 que l'Union Astronomique internationale décida d'adopter un système de normalisation des contours des diverses constellations. <br>Après avoir éliminé toutes celles qui se révélaient trop imprécises et/ou fantaisistes, il n'en resta plus que 88. <br/> <br>Sur les cartes anciennes, cette constellation était réunie avec celle d'Ophiuchus ; et l'ensemble ainsi formé portait le nom de Serpentaire, figurant Asklépios, le fils d'Apollon et dieu de la médecine. <br/> <br>La constellation est en fait divisée en deux : Serpens Cauda, la queue du serpent, et Serpens Caput, la tête du serpent. Depuis 1930, cette constellation fait partie du zodiaque astronomique, mais pas du zodiaque astrologique.<br/>",
+        "num":          "SERB",
         "boreal":       true,
         "australe":     true,
         "zodiaque":     false
@@ -1188,7 +1189,7 @@
         "zodiaque":     false
     },
 
-    {   "nom":          "Le Taureau", 
+    {   "nom":          "&#9801; Le Taureau", 
         "nomlatin":     "Taurus",
         "ascension":    "49,25° et 88,25°",
         "taille":       "797 deg2",
@@ -1203,7 +1204,7 @@
         "zodiaque":     true
     },
     
-    {   "nom":          "Le Télescope", 
+    {   "nom":          "&#128301; Le Télescope", 
         "nomlatin":     "Telescopium",
         "ascension":    "270° et 305°",
         "taille":       "57ème",
@@ -1278,7 +1279,7 @@
         "zodiaque":     true
     },
     
-    {   "nom":          "La Vierge", 
+    {   "nom":          "&#9805; La Vierge", 
         "nomlatin":     "Virgo",
         "ascension":    "172,75° et 226,25°",
         "taille":       "1 294 deg2",

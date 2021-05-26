@@ -8,15 +8,21 @@ gsap.registerPlugin(Draggable);
 Draggable.create("#stars", {type:"x,y", bounds:".container", inertia:true});
 
 
-let constWindow = document.querySelector(".star");
 let closeButton = document.querySelector("#trigger");
-let mainTitle = document.querySelector(".title--med");
+
+let constWindow = document.querySelector(".star");
+let mainTitle = document.querySelector(".title--small");
+let nomlatin = document.querySelector(".consttitles__latinname");
 let ascension = document.getElementById("ascension");
 let declinaison = document.getElementById("declinaison");
 let taille = document.getElementById("taille");
 let ordre = document.getElementById("ordre");
 let info = document.getElementById("info");
+
 let filter = document.querySelectorAll("[data-filter]");
+let filterWrap = document.querySelectorAll(".const-filters__el");
+let filterTrigger = document.querySelector(".filter-trigger");
+
 
 let data; // <-- On va stocker les infos du json ici
 /* STEP 1: Créer une fonction qu'on va appeler APRES avoir charger le JSON */
@@ -71,11 +77,18 @@ var activeArea = function (id) {
     taille.innerHTML= constSize;
     ordre.innerHTML= constClass;
     info.innerHTML= constInfo;
+    nomlatin.innerHTML = constLatinName;
 
 }
 
 function initFilterActions(){
     let constList = data.constellations;
+
+    filterTrigger.addEventListener('click', showFilters);
+    function showFilters(){
+        filterWrap.forEach(element => element.classList.toggle("const-filters__el--active"));
+    }
+
     filter.forEach(element => element.addEventListener('click', toggleFiltering));
 
     
