@@ -90,8 +90,6 @@
         fill:none;
         stroke-dasharray: 0; 
         stroke:#FFFFFF;
-        animation: constella linear; 
-        animation-duration: 6s;
         animation: constella ease-in infinite; 
         animation-duration: 16s;
     }
@@ -103,13 +101,10 @@
             opacity: 0;
         }
 
-        50%{
-            opacity: 0.3;
         25%{
             opacity: 0.75;
         }
 
-        100% {
         50% {
             stroke-dasharray:350 0;  
             opacity: 1;
