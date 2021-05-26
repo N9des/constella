@@ -92,6 +92,8 @@
         stroke:#FFFFFF;
         animation: constella linear; 
         animation-duration: 6s;
+        animation: constella ease-in infinite; 
+        animation-duration: 16s;
     }
     
     @keyframes constella {
@@ -103,11 +105,27 @@
 
         50%{
             opacity: 0.3;
+        25%{
+            opacity: 0.75;
         }
 
         100% {
+        50% {
             stroke-dasharray:350 0;  
             opacity: 1;
+        }
+        75% {
+            stroke-dasharray:350 0;  
+            opacity: 1;
+        }
+
+        82%{
+            opacity: 0.75;
+        }
+
+        100% {
+            stroke-dasharray:1 60;
+            opacity: 0;
         }
     }
 
