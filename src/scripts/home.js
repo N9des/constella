@@ -17,9 +17,6 @@ window.onscroll = function() {
 
 let sect02Art = document.getElementById("sect02-article");
 let sect02Img = document.querySelector(".const-img");
-let sect03Art = document.getElementById("sect03-article");
-let sect03Img = document.querySelector(".box-info-img");
-
 let scrollV = 0;
 let shown1 = false;
 let shown2 = false;
@@ -27,13 +24,7 @@ window.addEventListener('scroll', function(){
 
   let scrollValue = (window.innerHeight + window.scrollY) / (document.body.offsetHeight);
 
-  console.log(scrollValue);
 
-  if(scrollValue > 1.70){
-    sect02Art.style.opacity = '1';
-    sect02Art.style.transform = 'none';
-    sect02Img.style.opacity = '1';
-    sect02Img.style.transform = 'none';
   if(scrollValue > scrollV){
     scrollV = scrollValue;
     console.log(scrollValue);
@@ -59,10 +50,6 @@ window.addEventListener('scroll', function(){
   }
   
   if(scrollValue > 2.5){
-    sect03Art.style.opacity = '1';
-    sect03Art.style.transform = 'none';
-    sect03Img.style.opacity = '1';
-    sect03Img.style.transform = 'none';
     
     function showContent2(){
       if (shown2 == false){

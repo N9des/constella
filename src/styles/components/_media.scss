@@ -155,16 +155,8 @@
             justify-content: space-between;
             align-items: center;
 
-            .box-info{
-                width: 100%;
-            }
-
-            .const-img{
-                width: 80%;
             &-image,&-article{
                 opacity: 0;
-                transform: translateX(-500px);
-                transition: 1s ease-in-out;
                 transform: translateY(90px);
             }
 
@@ -178,11 +170,8 @@
             justify-content: space-between;
             align-items: center;
 
-            .box-info-img{
             &-image,&-article{
                 opacity: 0;
-                transform: translateX(1000px);
-                transition: 1s ease-in-out;
                 transform: translateY(90px);
             }
         }
@@ -195,18 +184,6 @@
         flex-direction: column;
         max-width: 50%;
 
-    }
-
-    #sect02-article{
-        opacity: 0;
-        transform: translateX(1000px);
-        transition: 1s ease-in-out; 
-    }
-
-    #sect03-article{
-        opacity: 0;
-        transform: translateX(-500px);
-        transition: 1s ease-in-out;
     }
 
 
