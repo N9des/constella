@@ -78,7 +78,25 @@ var activeArea = function (id) {
     ordre.innerHTML= constClass;
     info.innerHTML= constInfo;
     nomlatin.innerHTML = constLatinName;
+// --------------------------
 
+let classement = taille.innerHTML;
+classement = classement.replace(" deg2", "");
+function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      obj.innerHTML = Math.floor(progress * (end - start) + start)+" deg2";
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+  }
+  
+  const obj = document.getElementById('taille');
+  animateValue(obj, 100, classement, 450);
 }
 
 function initFilterActions(){
@@ -176,3 +194,5 @@ fetch(myRequest)
         }
       }
       stars();
+
+
