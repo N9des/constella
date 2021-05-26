@@ -8,6 +8,25 @@ gsap.registerPlugin(Draggable);
 Draggable.create("#stars", {type:"x,y", bounds:".container", inertia:true});
 
 
+/* LOADER */
+
+const loader = document.querySelector('.loader');
+
+window.addEventListener('load', () => {
+
+    
+    setTimeout(function() {
+        loader.classList.add('vis-hidden');
+        loader.addEventListener('transitionend', function(){
+            loader.style.display = 'none';
+        })
+    }, 3000);
+     
+})
+
+
+/* CARTE */
+
 let closeButton = document.querySelector("#trigger");
 
 let constWindow = document.querySelector(".star");
