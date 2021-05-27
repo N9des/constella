@@ -5,12 +5,14 @@
 
 
 #stars{
+.map__starscontainer{
     width: 300vw;
     position: fixed;
     z-index: 0;
 }
 
 #stars > i {
+.map__starscontainer,.desk > i {
     position: absolute;
     background: #fff;
     border-radius: 50%;
@@ -27,9 +29,11 @@
     }
     25% {
         opacity: 0.75;
+        opacity: 0.35;
     }
     95% {
         opacity: 0.75;
+        opacity: 0.35;
     }
     100% {
         opacity: 0;
