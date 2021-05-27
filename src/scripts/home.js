@@ -24,10 +24,7 @@ window.addEventListener('scroll', function(){
 
   if(scrollValue > scrollV){
     scrollV = scrollValue;
-    console.log(scrollValue);
   }
-
-  console.log(scrollV);
   if(scrollValue > 1.6){
 
     function showContent(){
