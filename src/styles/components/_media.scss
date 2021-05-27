@@ -8,6 +8,7 @@
     
     body{
         padding: 25px;
+        width: 100%;
     }
 
     /* HEAD */
@@ -154,6 +155,7 @@
     }
 
     .desk{
+        width: 100%;
         z-index: 1;
         display: flex;
         flex-direction: column;
@@ -554,7 +556,7 @@
 
     .footer{
         padding: 4vh 50px 2vh 150px;
-        width: 100vw;
+        width: 100%;
         position: fixed;
         bottom: 0;
         left: 0;
