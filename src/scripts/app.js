@@ -145,13 +145,13 @@ function initFilterActions(){
         filterWrap.forEach(element => element.classList.toggle("const-filters__el--active"));
 
         let tl = gsap.timeline();
-        tl.to("#round1", {x: 170, duration: 0.5})
+        tl.to("#round1", {x: 170, duration: 0.2})
           .to("#round1", {x: 50, duration: 0.2})
-          .to("#round1", {x: 0, duration: 0.3})
-          .to("#round2", {x:-180, duration: 0.6}, "-=1")
-          .to("#round2", {x:0, duration: 0.4})
-          .to("#round3", {x: 60, duration: 0.3}, "-=2")
-          .to("#round3", {x: -45, duration: 0.4})
+          .to("#round1", {x: 0, duration: 0.2})
+          .to("#round2", {x:-180, duration: 0.2}, 0)
+          .to("#round2", {x:0, duration: 0.2})
+          .from("#round3", {x: 60, duration: 0.2}, 0)
+          .to("#round3", {x: -45, duration: 0.2})
           .to("#round3", {x: 0, duration: 0.2});
     }
 

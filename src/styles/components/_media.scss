@@ -130,10 +130,11 @@
     }
 
     .logo_DP--const{
-        width: 4%;
+        width: 5vw;
+        max-width: 50px;
         z-index: 3;
         margin-top: 50px;
-        margin-left: 150px;
+        margin-left: 160px;
     }
     .logo_link{
         display: block;
@@ -143,7 +144,7 @@
         position: relative;
         top: 0;
         left: 0;
-        width: 30%;
+
         z-index: 3;
     }
 
@@ -236,16 +237,11 @@
             justify-content: space-between;
             align-items: center;
 
-            .box-info{
-                width: 100%;
+            &-image,&-article{
+                opacity: 0;
+                transform: translateY(90px);
             }
 
-            .const-img{
-                width: 80%;
-                opacity: 0;
-                transform: translateX(-500px);
-                transition: 1.5s ease-in-out;
-            }
         }
 
         &--03{
@@ -256,10 +252,9 @@
             justify-content: space-between;
             align-items: center;
 
-            .box-info-img{
+            &-image,&-article{
                 opacity: 0;
-                transform: translateX(1000px);
-                transition: 1.5s ease-in-out;
+                transform: translateY(90px);
             }
         }
         
@@ -271,18 +266,6 @@
         flex-direction: column;
         max-width: 50%;
 
-    }
-
-    #sect02-article{
-        opacity: 0;
-        transform: translateX(1000px);
-        transition: 1.5s ease-in-out; 
-    }
-
-    #sect03-article{
-        opacity: 0;
-        transform: translateX(-500px);
-        transition: 1.5s ease-in-out;
     }
 
 
@@ -360,8 +343,13 @@
     .const-filters__el{
         padding-left: 25px;
         display: none;
+        cursor: pointer;
         &--active{
             display: block;
+        }
+
+        input,label{
+            cursor: pointer;
         }
     }
 
@@ -594,3 +582,4 @@
     
     
     
+Z
