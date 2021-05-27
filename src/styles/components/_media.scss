@@ -286,8 +286,10 @@
     }
 
 
+    /* BTN EXPLORE */
 
     .btn_explore{
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -295,21 +297,43 @@
         margin: 60px 0;
         width: 200px;
         height: 45px;
-        border: none;
+        border: 1px solid $c-hover;
         border-radius: 30px;
-        background-color: $c-hover;
         font-size: 25px;
         font-family: 'Comfortaa';
-        color: #000;
+        color: $c-bg;
         font-weight: bold;
-        transition: all 200ms;
-        
-
-        &:hover{
-            background-color: #f8b669;
-        }
+        overflow: hidden;
+        transition: 1s all ease; 
 
     }
+
+    .btn_explore::before{
+        background: $c-hover;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+        transition: all 0.6s ease;
+    }
+
+    .btn-hover::before{
+        width: 100%;
+        height: 0%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+
+    .btn-hover:hover::before{
+        height: 380%;
+    }
+
+    .btn-hover:hover{
+        color: #000;
+    } 
+
+
 
     .map{
         display: flex;
