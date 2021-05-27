@@ -3,11 +3,23 @@
   */
 @import 'utils/variables';
 
+
 @font-face {
   font-family: 'Comfortaa';
-  src: url("../../assets/fonts/Comfortaa-Regular.ttf") format("ttf"),
-        url("../../assets/fonts/Comfortaa-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-display: block;
+  src: url("../../assets/fonts/Comfortaa-Regular.woff") format("woff"),
+        url("../../assets/fonts/Comfortaa-Bold.woff") format("woff");
 }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-display: block;
+  src: url("../../assets/fonts/Lato-Regular.woff") format("woff");
+}
+
+
 
 body {
   font-family: 'Lato', sans-serif;
