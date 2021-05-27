@@ -44,13 +44,6 @@ body{
 
 /* header */
 
-.navbar{
-    position: fixed; /* Make it stick/fixed */
-    top: 50px;
-    left: 150px; 
-    transition: top 0.3s
-}
-
 .logo_DP_min{
     
     width: 20%;
@@ -119,7 +112,7 @@ body{
     text-align: right;
     line-height: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .team_El{

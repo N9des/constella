@@ -110,6 +110,13 @@
 
     /* HEAD */
 
+    .navbar{
+        position: fixed; /* Make it stick/fixed */
+        top: 50px;
+        left: 150px; 
+        transition: top 0.3s
+    }
+
     .logo_DP{
         width: 15vw;
     }
@@ -552,6 +559,10 @@
         left: 0;
         background-image: url(../../assets/images/wave.svg);
         background-size: cover;
+    }
+
+    .team_list{
+        flex-direction: row;
     }
 
     .team_link{
