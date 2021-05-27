@@ -87,18 +87,7 @@
     
     } 
     
-    /* @keyframes flash{
-        from{
-            transform: translateY(30px);
-            
-        }
-        
-        to{
-            transform: translateY(0px);
-            opacity: 0.4;     
-        }
-    } */
-    
+
     
     .letter:nth-child(1){
         animation-delay: 0.5s;
@@ -255,6 +244,10 @@
             &-image,&-article{
                 opacity: 0;
                 transform: translateY(90px);
+            }
+
+            .box-info-img{
+                width: 80%;
             }
         }
         
@@ -423,6 +416,7 @@
     .star--active{
         display: block;
     }
+
     .const-header{
         display: flex;
         flex-direction: row;
@@ -571,6 +565,10 @@
 
 
 }
+
+
+
+
 
 @media screen and (min-width: $big-screen) {
     body{
