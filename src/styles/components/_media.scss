@@ -57,7 +57,7 @@
 
     .letter{
         color: $c-bg;
-        font-size: 70px;
+        font-size: 45px;
         letter-spacing: 15px;
         margin-bottom: 100px;
         animation: flash 1.2s ease-in-out infinite;
@@ -65,7 +65,7 @@
     
     .texte{
         color: $c-bg;
-        font-size: 70px;
+        font-size: 45px;
         letter-spacing: 15px;
         margin-bottom: 100px;
     }
@@ -207,16 +207,14 @@
     }
 
     .sect{
-
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         overflow: hidden;
 
         &--01{
-            margin-bottom: 300px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            height: 100vh;
 
 
             .const-illu{
@@ -227,11 +225,7 @@
         }
 
         &--02{
-            margin-bottom: 300px;
-            display: flex;
             flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
 
             &-image,&-article{
                 opacity: 0;
@@ -241,13 +235,6 @@
         }
 
         &--03{
-            margin-bottom: 300px;
-            
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-
             &-image,&-article{
                 opacity: 0;
                 transform: translateY(90px);
@@ -268,7 +255,12 @@
 
     }
 
-
+    .image{
+        margin-bottom: -7rem;
+        max-width: 35vw;
+        -webkit-box-shadow: 0px 0px 23px 12px rgba(1,2,5,0.14); 
+        box-shadow: 0px 0px 23px 12px rgba(1,2,5,0.14);    
+    }
     /* BTN EXPLORE */
 
     .btn_explore{
@@ -552,7 +544,7 @@
     /* FOOTER */
 
     .footer{
-        padding: 60px 150px 40px 150px;
+        padding: 4vh 50px 2vh 150px;
         width: 100vw;
         position: fixed;
         bottom: 0;
