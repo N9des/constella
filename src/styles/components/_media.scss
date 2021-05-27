@@ -200,15 +200,14 @@
     }
 
     .sect{
-
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         overflow: hidden;
 
         &--01{
             margin-bottom: 300px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
             height: 100vh;
 
 
@@ -221,10 +220,7 @@
 
         &--02{
             margin-bottom: 300px;
-            display: flex;
             flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
 
             &-image,&-article{
                 opacity: 0;
@@ -235,11 +231,6 @@
 
         &--03{
             margin-bottom: 300px;
-            
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
 
             &-image,&-article{
                 opacity: 0;
@@ -259,6 +250,10 @@
         flex-direction: column;
         max-width: 50%;
 
+    }
+
+    .image{
+        max-width: 35vw;
     }
 
 
