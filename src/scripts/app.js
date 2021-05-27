@@ -226,9 +226,9 @@ fetch(myRequest)
 
     function stars() {
         const count = 500;
-        const stars = document.getElementById('stars');
-        var i = 0;
-        while(i < count) {
+        const stars = document.querySelector('.map__starscontainer');
+
+        for (let i = 0; i < count; i++){
           const star = document.createElement('i');
           const x = Math.floor(Math.random() * stars.clientWidth)
           const y = Math.floor(Math.random() * stars.clientHeight)
@@ -240,7 +240,6 @@ fetch(myRequest)
           const duration = Math.random() * 2;
           star.style.animationDuration = 7+duration+'s';
           stars.appendChild(star);
-          i++
         }
       }
       stars();
