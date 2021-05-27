@@ -48,7 +48,8 @@ body{
     position: fixed; /* Make it stick/fixed */
     top: 50px;
     left: 150px; 
-    transition: top 0.3s
+    transition: top 0.3s;
+    z-index: 100;
 }
 
 .logo_DP_min{
