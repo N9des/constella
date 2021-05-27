@@ -200,6 +200,7 @@
     }
 
     .sect{
+        height: 100vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -207,8 +208,6 @@
         overflow: hidden;
 
         &--01{
-            margin-bottom: 300px;
-            height: 100vh;
 
 
             .const-illu{
@@ -219,7 +218,6 @@
         }
 
         &--02{
-            margin-bottom: 300px;
             flex-direction: row-reverse;
 
             &-image,&-article{
@@ -230,8 +228,6 @@
         }
 
         &--03{
-            margin-bottom: 300px;
-
             &-image,&-article{
                 opacity: 0;
                 transform: translateY(90px);
@@ -253,10 +249,11 @@
     }
 
     .image{
+        margin-bottom: -7rem;
         max-width: 35vw;
+        -webkit-box-shadow: 0px 0px 23px 12px rgba(1,2,5,0.14); 
+        box-shadow: 0px 0px 23px 12px rgba(1,2,5,0.14);    
     }
-
-
     /* BTN EXPLORE */
 
     .btn_explore{
@@ -540,7 +537,7 @@
     /* FOOTER */
 
     .footer{
-        padding: 60px 150px 40px 150px;
+        padding: 4vh 50px 2vh 150px;
         width: 100vw;
         position: fixed;
         bottom: 0;
