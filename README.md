@@ -1,4 +1,5 @@
-# Simple Workflow with Laravel Mix.
+## Description
+School project. Map of the sky with all informations for each constellation.
 
 ## Install
 
